@@ -1,5 +1,6 @@
 
 # NEXT DEVELOPER APP BUILT ON NEXT.JS AND REACT
+Azure Gallagher (NAIT)
 
 Currently this project has a header but it will eventually be combined with an API to fetch
 developers and put them into custom styled card components.
