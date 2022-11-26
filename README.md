@@ -2,11 +2,13 @@
 # NEXT DEVELOPER APP BUILT ON NEXT.JS AND REACT
 Azure Gallagher (NAIT)
 
-Currently this project has a header but it will eventually be combined with an API to fetch
-developers and put them into custom styled card components.
+Are you looking for a web developer? Look no further-- this is a compilation of the best and brightest in the field!
 
-## More Information
+##Web Developers
 
-lorem ipsum dolor sit amet, consectetur adipis non proident, sed do eiusmod tempor incididunt ut labor minimis. 
-Ut enim ad minim veniam, sed do eiusmod tempor incididunt ut labor minimis sunt.
+This project uses Next.js 13 and React, combined with an API to fetch developers and put them into custom styled card components. These
+components have three categories of devs, front end, full-stack, and back end.
 
+##Theming
+
+I used a technological, sci-fi type theme to bring the web developer subject matter to the forefront.
