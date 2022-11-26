@@ -1,0 +1,52 @@
+
+.card {
+    /* width: calc(100% - 1rem); */
+    margin-inline: .5rem;
+    margin-bottom: 2.5rem;
+    border-radius: 6px;
+    box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+}
+
+.card-top {
+    background-color: var(--jungle);
+    border-radius: 6px 6px 0 0;
+}
+
+.card-top h2 {
+    color: var(--saddle);
+}
+
+.card img {
+    display: block;
+    border-radius: 100%;
+    width: 11rem;
+    height: 11rem;
+    margin: 2rem auto;
+}
+
+.card ul {
+    list-style-type: disc;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.card li {
+    margin-bottom: 1rem;
+}
+
+.card li:last-of-type {
+    margin-bottom: 2rem;
+}
+
+.card li span {
+    color: #97531F;
+    font-weight: bold;
+}
+
+.card p {
+    margin-left: 0;
+}
+
+.card-body {
+    padding: 1rem;
+}

@@ -13,19 +13,25 @@ export default function Header({title}) {
            <div className={styles.mobile_menu} >
             <ul>
               <li className={styles.navitem}>
-                <Link href='/'>Developer List</Link>
+                <Link href='/'>Home</Link>
               </li>
               <li className={styles.navitem}>
-                <Link href='/'>Create</Link>
+                <Link href='/frontend'>Frontend</Link>
               </li>
               <li className={styles.navitem}>
-                <Link href='/'>Read</Link>
+                <Link href='/'>UI/UX</Link>
               </li>
               <li className={styles.navitem}>
-                <Link href='/'>Update</Link>
+                <Link href='/'>Full stack</Link>
               </li>
               <li className={styles.navitem}>
-                <Link href='/'>Delete</Link>
+                <Link href='/'>Backend</Link>
+              </li>
+              <li className={styles.navitem}>
+                <Link href='/'>Login</Link>
+              </li>
+              <li className={styles.navitem}>
+                <Link href='/'>Github</Link>
               </li>
             </ul>
           </div>
