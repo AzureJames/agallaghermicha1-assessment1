@@ -1,12 +1,33 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import Header from '../components/Header'
 import Link from 'next/link'
-import Banner from '../components/Banner'
+import DevBanner from '../components/DevBanner'
 import Card from '../components/Card'
 // https://agallaghermicha1-assessment1.vercel.app/
-export default function Home() {
+
+  // This function gets called at build time on server-side.
+  // It won't be called on client-side, so you can even do
+  // direct database queries.
+  export async function getStaticProps() {
+    // Call an external API endpoint to get posts.
+    // You can use any data fetching library
+    const res = await fetch('https://randomuser.me/api/')
+    const devs = await res.json()
+
+    return {
+      props: {
+        devs,
+      },
+    }
+  }
+  
+
+
+const Cardstyle = { display: 'flex', flexWrap: 'wrap', marginInline: 'auto' }
+
+
+export default function Frontend(devs) {
   return (
     <div className={styles.container}>
       <Head>
@@ -17,7 +38,16 @@ export default function Home() {
       </Head>
       <Header title="Next.js Dev" />
       <main className={styles.main}>
-        <Card></Card>
+        <DevBanner title='Front End Developers' 
+            tagline='If you need a beautiful design or nice responsive layout, you will find it here!' 
+            img='kitten.jpg'
+            alt='frontend dev'/>
+        <div style={Cardstyle}>
+                <Card 
+                title={devs.devs.results[0].name.first}
+                body={devs.devs.results[0].name.first}>
+                </Card>
+        </div>
       </main>
 
       <footer className={styles.footer}>
@@ -27,3 +57,7 @@ export default function Home() {
     </div>
   )
 }
+
+
+
+

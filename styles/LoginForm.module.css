@@ -1,0 +1,8 @@
+.loginCard {
+    padding: 2rem;
+    border-radius: 58px;
+    background: #131314;
+    box-shadow:  15px 15px 13px #09090a,
+             -15px -15px 13px #1d1d1e;
+}
+

@@ -1,4 +1,17 @@
 .title,
 .description {
-    color: #f5f5f5;
+    color: #808080;
+}
+
+.devbanner {
+    padding: 2rem;
+    border-radius: 58px;
+    background: #131314;
+    box-shadow: inset 20px 20px 60px #101011,
+            inset -20px -20px 60px #161617;
+}
+
+div > .devbanner {
+    color: whitesmoke;
+    text-align: center;
 }

@@ -9,7 +9,15 @@ body {
 
 p, a, li {
   font-size: 17px;
-  color: whitesmoke;
+  color: #808080;
+}
+
+h1, h2, label {
+  color: #808080;
+}
+
+input {
+  background-color: lightgray;
 }
 
 a {
@@ -25,7 +33,7 @@ a {
     color-scheme: dark;
   }
   body {
-    color: white;
+    color: #808080;
     background: black;
   }
 }
