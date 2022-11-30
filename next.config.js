@@ -2,7 +2,7 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    domains: ['placekitten.com'],
+    domains: ['placekitten.com', 'randomuser.me'],
     minimumCacheTTL: 1500000,
   },
 }

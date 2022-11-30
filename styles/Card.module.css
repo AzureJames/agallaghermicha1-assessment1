@@ -35,15 +35,13 @@
     padding-block: 0.2rem;
 }
 
-/* .cardtop h2 {
-    color: black;
-} */
+.cardtop h2 {
+    color: lightblue;
+}
 
 .card img {
     display: block;
     border-radius: 100%;
-    width: 11rem;
-    height: 11rem;
     margin: 2rem auto;
 }
 

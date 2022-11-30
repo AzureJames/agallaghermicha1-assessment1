@@ -42,12 +42,21 @@ export default function Frontend(devs) {
             tagline='If you need a beautiful design or nice responsive layout, you will find it here!' 
             img='kitten.jpg'
             alt='frontend dev'/>
-        <div style={Cardstyle}>
-                <Card 
-                title={devs.devs.results[0].name.first}
-                body={devs.devs.results[0].name.first}>
-                </Card>
-        </div>
+            {
+            devs.devs.map(devs => {
+                <div style={Cardstyle}>
+                        <Card 
+                        title={devs.devs.results[0].name.first}
+                        body="Frontend Developer"
+                        city={devs.devs.results[0].location.city}
+                        state={devs.devs.results[0].location.state}
+                        country={devs.devs.results[0].location.country} 
+                        pic={devs.devs.results[0].picture.large}
+                        phone={devs.devs.results[0].phone}
+                        >
+                        </Card>
+                </div>})
+            }
       </main>
 
       <footer className={styles.footer}>

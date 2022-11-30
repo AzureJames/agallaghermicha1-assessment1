@@ -7,6 +7,10 @@ body {
     background-color: rgb(19, 19, 20);
 }
 
+img {
+  max-width: 100%;
+}
+
 p, a, li {
   font-size: 17px;
   color: #808080;
