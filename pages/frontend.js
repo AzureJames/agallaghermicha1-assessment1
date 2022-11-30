@@ -13,7 +13,7 @@ import Card from '../components/Card'
     // Call an external API endpoint to get posts.
     // You can use any data fetching library
     let res; 
-    let devs = {}; 
+    let devs = []; 
 
     for(let i=0; i<6; i++){
     res = await fetch('https://randomuser.me/api/')
@@ -47,27 +47,27 @@ export default function Frontend(devs) {
             tagline='If you need a beautiful design or nice responsive layout, you will find it here!' 
             img='kitten.jpg'
             alt='frontend dev'/>
-                          
+             <div className={styles.flex1200}>         
             { 
-            Object.entries(devs).forEach(([key, value]) => {
-                //return <>
-               <div style={Cardstyle}>
-                    <Card 
-                    key={key}
-                    title={value[0].results[0].name.first}
-                    body="Frontend Developer"
-                    city={value[0].results[0].location.city}
-                    state={value[0].results[0].location.state}
-                    country={value[0].results[0].location.country} 
-                    pic={value[0].results[0].picture.large}
-                    phone={value[0].results[0].phone}
-                    >
-                    </Card>
-                </div>
-                //</>
-            })
-                
+            devs.devs.map((dev) => {
+                return <>
+                {/* <div style={Cardstyle}> */}
+                <Card 
+               // key={key}
+                title={dev.results.name}
+                body="Frontend Developer"
+                city={dev.results[0].location.city}
+                state={dev.results[0].location.state}
+                country={dev.results[0].location.country} 
+                pic={dev.results[0].picture.large}
+                phone={dev.results[0].phone}
+                >
+                </Card>
+                {/* </div> */}
+                </>
+            })  
             }
+            </div>    
       </main>
 
       <footer className={styles.footer}>

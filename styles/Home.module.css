@@ -128,3 +128,9 @@
     filter: invert(1);
   }
 }
+
+.flex1200 {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
