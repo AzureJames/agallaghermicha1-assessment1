@@ -12,8 +12,13 @@ import Card from '../components/Card'
   export async function getStaticProps() {
     // Call an external API endpoint to get posts.
     // You can use any data fetching library
-    const res = await fetch('https://randomuser.me/api/')
-    const devs = await res.json()
+    let res; 
+    let devs = {}; 
+
+    for(let i=0; i<6; i++){
+    res = await fetch('https://randomuser.me/api/')
+    devs[i] = await res.json()
+    }
 
     return {
       props: {
@@ -42,20 +47,26 @@ export default function Frontend(devs) {
             tagline='If you need a beautiful design or nice responsive layout, you will find it here!' 
             img='kitten.jpg'
             alt='frontend dev'/>
-            {
-            devs.devs.map(devs => {
-                <div style={Cardstyle}>
-                        <Card 
-                        title={devs.devs.results[0].name.first}
-                        body="Frontend Developer"
-                        city={devs.devs.results[0].location.city}
-                        state={devs.devs.results[0].location.state}
-                        country={devs.devs.results[0].location.country} 
-                        pic={devs.devs.results[0].picture.large}
-                        phone={devs.devs.results[0].phone}
-                        >
-                        </Card>
-                </div>})
+                          
+            { 
+            Object.entries(devs).forEach(([key, value]) => {
+                //return <>
+               <div style={Cardstyle}>
+                    <Card 
+                    key={key}
+                    title={value[0].results[0].name.first}
+                    body="Frontend Developer"
+                    city={value[0].results[0].location.city}
+                    state={value[0].results[0].location.state}
+                    country={value[0].results[0].location.country} 
+                    pic={value[0].results[0].picture.large}
+                    phone={value[0].results[0].phone}
+                    >
+                    </Card>
+                </div>
+                //</>
+            })
+                
             }
       </main>
 
