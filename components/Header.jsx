@@ -25,7 +25,7 @@ export default function Header({title}) {
                 <Link href='/'>Full stack</Link>
               </li>
               <li className={styles.navitem}>
-                <Link href='/'>Backend</Link>
+                <Link href='/backend'>Backend</Link>
               </li>
               <li className={styles.navitem}>
                 <Link href='/'>Login</Link>
