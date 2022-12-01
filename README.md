@@ -4,7 +4,7 @@ Azure Gallagher (NAIT)
 
 Are you looking for a web developer? Look no further-- this is a compilation of the best and brightest in the field!
 
-Link to live site:
+Link to live site here:
 https://agallaghermicha1-assessment1.vercel.app/
 
 ## Web Developers
