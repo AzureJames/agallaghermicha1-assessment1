@@ -5,6 +5,7 @@ import Link from 'next/link'
 import DevBanner from '../components/DevBanner'
 import Card from '../components/Card'
 import { useState } from 'react'
+
 // https://agallaghermicha1-assessment1.vercel.app/
 
   // This function gets called at build time on server-side.
@@ -30,7 +31,7 @@ import { useState } from 'react'
   
 
 
-const Cardstyle = { display: 'flex', flexWrap: 'wrap', marginInline: 'auto' }
+//const Cardstyle = { display: 'flex', flexWrap: 'wrap', marginInline: 'auto' }
 
 
 export default function Backend(devs) {
@@ -48,25 +49,25 @@ export default function Backend(devs) {
       </Head>
       <Header title="Next.js Dev" />
       <main className={styles.main}>
-        <DevBanner title='Front End Developers' 
-            tagline='If you need a beautiful design or nice responsive layout, you will find it here!' 
-            alt='frontend dev'/>
+        <DevBanner title='Backend Developers' 
+            tagline='Devs with expertise in software and cybersecurity!' 
+            imgPath={'../public/pc.svg'}/>
              <div className={styles.flex1200}>         
             { 
-            devs.devs.map((dev) => {
+            devs.devs.map((dev, index) => {
                 return <>
                 {/* <div style={Cardstyle}> */}
                 <Card 
-                key={dev.indexOf}
-               
+                index={index}
+                key={index}
                 title={dev.results[0].name.first}
-                body="Frontend Developer"
+                body="Backend Developer"
                 city={dev.results[0].location.city}
                 state={dev.results[0].location.state}
                 country={dev.results[0].location.country} 
                 pic={dev.results[0].picture.large}
                 phone={dev.results[0].phone}
-                
+                email={dev.results[0].email}
                 >
                 </Card>
                 {/* </div> */}

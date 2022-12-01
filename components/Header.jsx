@@ -19,19 +19,19 @@ export default function Header({title}) {
                 <Link href='/frontend'>Frontend</Link>
               </li>
               <li className={styles.navitem}>
-                <Link href='/'>UI/UX</Link>
+                <Link href='/uiux'>UI/UX</Link>
               </li>
               <li className={styles.navitem}>
-                <Link href='/'>Full stack</Link>
+                <Link href='/fullstack'>Full stack</Link>
               </li>
               <li className={styles.navitem}>
                 <Link href='/backend'>Backend</Link>
               </li>
               <li className={styles.navitem}>
-                <Link href='/'>Login</Link>
+                <Link href='/login'>Login</Link>
               </li>
               <li className={styles.navitem}>
-                <Link href='/'>Github</Link>
+                <Link href='https://github.com/AzureJames/agallaghermicha1-assessment1'>Github</Link>
               </li>
             </ul>
           </div>

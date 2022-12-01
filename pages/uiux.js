@@ -4,7 +4,7 @@ import Header from '../components/Header'
 import Link from 'next/link'
 import DevBanner from '../components/DevBanner'
 import Card from '../components/Card'
-import { useState } from 'react'
+
 
 // https://agallaghermicha1-assessment1.vercel.app/
 
@@ -34,7 +34,7 @@ import { useState } from 'react'
 //const Cardstyle = { display: 'flex', flexWrap: 'wrap', marginInline: 'auto' }
 
 
-export default function Frontend(devs) {
+export default function Uiux(devs) {
 
 
 
@@ -49,8 +49,8 @@ export default function Frontend(devs) {
       </Head>
       <Header title="Next.js Dev" />
       <main className={styles.main}>
-        <DevBanner title='Front End Developers' 
-            tagline='If you need a beautiful design or nice responsive layout, you will find it here!' 
+        <DevBanner title='UI/UX Designers' 
+            tagline='If you need to make something intuitive and accessible, with beautiful design and responsive layout, look no further!' 
             imgPath={'../public/pc.svg'}/>
              <div className={styles.flex1200}>         
             { 

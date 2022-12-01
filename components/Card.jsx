@@ -3,12 +3,12 @@ import Image from 'next/image'
 import styles from '../styles/Card.module.css'
 import { useState } from 'react';
 
-export default function Card({key, title, body, city, state, country, pic, phone}) {
+export default function Card({index, title, body, city, state, country, pic, phone, email}) {
 
     const [activeCard, setActiveCard] = useState("");
     function randomBio () {
         let rnd = Math.round(Math.random()*6);
-        let txt = "";
+        //let txt = "";
         switch(rnd){
             case 0:
                 setActiveCard("Highly motivated, ambitious & charismatic Web Developer bringing enthusiasm and detailed understanding of various programming languages to webpage planning, development and maintenance. Experience designing and developing sites from concept to rollout. I enjoy creating products with the user in mind, focusing on smooth processes and experiences. My interests include guerrilla usability testing, baking, architecture, gamification, Tilda Swinton, 3D printing, open-source software, modelling and rendering in Blender, Dungeon and Dragons, making music in Ableton Live, futurism, and VR/AR.");
@@ -38,7 +38,7 @@ export default function Card({key, title, body, city, state, country, pic, phone
        
     }
   return (
-    <div className={styles.card} key={key} onClick={ () => activeCard == "" ? randomBio() : setActiveCard("")}> 
+    <div className={styles.card} key={index} onClick={ () => activeCard == "" ? randomBio() : setActiveCard("")}> 
         <div className={styles.cardtop}>
             <h2 className={styles.h2two}>{title}</h2>
         </div>
@@ -50,6 +50,7 @@ export default function Card({key, title, body, city, state, country, pic, phone
                     <p><span>{city}, {state}</span></p>
                     <p><span>{country}</span></p>
                     <p><span>{phone}</span></p>
+                    <p><span>{email}</span></p>
                     <p>{activeCard}</p>
                 </li>
             </ul>

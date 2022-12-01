@@ -7,11 +7,17 @@
     width: calc(100vw - 2rem);
     margin-inline: .5rem;
     margin-bottom: 2.5rem;
-
+    transition: all .3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     border-radius: 32px;
     background: #131314;
     box-shadow:  15px 15px 13px #09090a,
              -15px -15px 13px #1d1d1e;
+}
+
+.card:hover {
+    background: #252528;
+    box-shadow:  15px 15px 13px #09090a,
+             -15px -15px 13px #383839;
 }
 
 @media screen and (min-width: 768px) {
