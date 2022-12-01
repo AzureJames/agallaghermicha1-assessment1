@@ -58,7 +58,7 @@ export default function Backend(devs) {
                 {/* <div style={Cardstyle}> */}
                 <Card 
                 key={dev.indexOf}
-                active={useState()}
+               
                 title={dev.results[0].name.first}
                 body="Frontend Developer"
                 city={dev.results[0].location.city}
