@@ -4,6 +4,7 @@ import Header from '../components/Header'
 import Link from 'next/link'
 import DevBanner from '../components/DevBanner'
 import Card from '../components/Card'
+import { useState } from 'react'
 // https://agallaghermicha1-assessment1.vercel.app/
 
   // This function gets called at build time on server-side.
@@ -16,7 +17,7 @@ import Card from '../components/Card'
     let devs = []; 
 
     for(let i=0; i<6; i++){
-    res = await fetch('https://randomuser.me/api/')
+    res = await fetch('https://randomuser.me/api/') 
     devs[i] = await res.json()
     }
 
@@ -33,6 +34,10 @@ const Cardstyle = { display: 'flex', flexWrap: 'wrap', marginInline: 'auto' }
 
 
 export default function Frontend(devs) {
+
+
+
+
   return (
     <div className={styles.container}>
       <Head>
@@ -45,7 +50,6 @@ export default function Frontend(devs) {
       <main className={styles.main}>
         <DevBanner title='Front End Developers' 
             tagline='If you need a beautiful design or nice responsive layout, you will find it here!' 
-            img='kitten.jpg'
             alt='frontend dev'/>
              <div className={styles.flex1200}>         
             { 
@@ -53,14 +57,16 @@ export default function Frontend(devs) {
                 return <>
                 {/* <div style={Cardstyle}> */}
                 <Card 
-               // key={key}
-                title={dev.results.name}
+                key={dev.indexOf}
+                active={useState()}
+                title={dev.results[0].name.first}
                 body="Frontend Developer"
                 city={dev.results[0].location.city}
                 state={dev.results[0].location.state}
                 country={dev.results[0].location.country} 
                 pic={dev.results[0].picture.large}
                 phone={dev.results[0].phone}
+                
                 >
                 </Card>
                 {/* </div> */}
