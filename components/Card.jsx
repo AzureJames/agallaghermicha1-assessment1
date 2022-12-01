@@ -4,8 +4,20 @@ import styles from '../styles/Card.module.css'
 import { useState } from 'react';
 
 export default function Card({index, title, body, city, state, country, pic, phone, email}) {
-
+    const arrow = {
+        color: 'whitesmoke',
+        textAlign: 'center'
+    }
+    const arrowDiv = {
+        border: '1px solid gray',
+        borderRadius: '100%',
+        textAlign: 'center',
+        //padding: '.5rem',
+        width: "20%",
+        margin: '0 auto',
+    }
     const [activeCard, setActiveCard] = useState("");
+    const [arrowContent, setArrowContent] = useState("v");
     function randomBio () {
         let rnd = Math.round(Math.random()*6);
         //let txt = "";
@@ -35,10 +47,10 @@ export default function Card({index, title, body, city, state, country, pic, pho
                 setActiveCard("");
                 break;
         }
-       
+       setArrowContent("^");
     }
   return (
-    <div className={styles.card} key={index} onClick={ () => activeCard == "" ? randomBio() : setActiveCard("")}> 
+    <div className={styles.card} key={index} onClick={ () => {if(activeCard == ""){randomBio();} else {setActiveCard("");setArrowContent("v");}} }> 
         <div className={styles.cardtop}>
             <h2 className={styles.h2two}>{title}</h2>
         </div>
@@ -52,6 +64,9 @@ export default function Card({index, title, body, city, state, country, pic, pho
                     <p><span>{phone}</span></p>
                     <p><span>{email}</span></p>
                     <p>{activeCard}</p>
+                    <div style={arrowDiv} className='arrowd'>
+                        <p style={arrow}>{arrowContent}</p> 
+                    </div>
                 </li>
             </ul>
         </div>

@@ -20,6 +20,14 @@
              -15px -15px 13px #383839;
 }
 
+body .arrowd:hover {
+    
+        cursor: 'pointer';
+        background-color: 'black';
+        padding: '20rem';
+    
+}
+
 @media screen and (min-width: 768px) {
     .cardcontainer {
         display: flex;
