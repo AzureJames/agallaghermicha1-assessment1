@@ -20,6 +20,7 @@ nav.nav {
     }
 
     .navitem {
+        box-shadow: 8px 8px 8px black;
         border: 1px dashed skyblue;
         border-radius: 4px;
     }

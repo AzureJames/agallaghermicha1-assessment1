@@ -41,3 +41,18 @@ a {
     background: black;
   }
 }
+
+
+footer {
+    padding: 2rem 4rem;
+    border-radius: 28px;
+  background: #131314;
+box-shadow: inset 20px 20px 14px #080808,
+            inset -20px -20px 14px #1e1e20;
+    margin: 1rem 2rem 2rem 2rem;
+
+}
+
+footer > * {
+  padding: 1.5rem;
+}
