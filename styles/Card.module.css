@@ -18,7 +18,13 @@
     background: #252528;
     box-shadow:  15px 15px 13px #09090a,
              -15px -15px 13px #383839;
+    cursor: pointer;
 }
+
+.card p {
+    color: #9b9b9b;
+}
+
 
 body .arrowd:hover {
     

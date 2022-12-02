@@ -64,7 +64,7 @@ export default function Card({index, title, body, city, state, country, pic, pho
                     <p><span>{phone}</span></p>
                     <p><span>{email}</span></p>
                     <p>{activeCard}</p>
-                    <div style={arrowDiv} className='arrowd'>
+                    <div style={arrowDiv} className='arrowd' aria-roledescription="Click to show or hide developer description">
                         <p style={arrow}>{arrowContent}</p> 
                     </div>
                 </li>
