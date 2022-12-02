@@ -50,8 +50,10 @@ export default function Fullstack(devs) {
       <Header title="Next.js Dev" />
       <main className={styles.main}>
         <DevBanner title='Fullstack Developers' 
-            tagline='Developers with skills in design, UI/UX, database, software and cybersecurity!' 
-            imgPath={'../public/pc.svg'}/>
+            tagline='Developers with skills in design, UI/UX, database, and making software!' 
+            imgPath={'pc'}
+            svgColor={'pink'}
+            />
              <div className={styles.flex1200}>         
             { 
             devs.devs.map((dev, index) => {

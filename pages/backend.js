@@ -51,7 +51,9 @@ export default function Backend(devs) {
       <main className={styles.main}>
         <DevBanner title='Backend Developers' 
             tagline='Devs with expertise in software and cybersecurity!' 
-            imgPath={'../public/pc.svg'}/>
+            imgPath='pc'
+            svgColor='blue'
+            />
              <div className={styles.flex1200}>         
             { 
             devs.devs.map((dev, index) => {

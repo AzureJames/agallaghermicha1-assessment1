@@ -1,4 +1,4 @@
-export default function MyPcSvg({src, height, width, fillColor }) {
+export default function MyPcSvg({height, width, fillColor }) {
     return (
     <>
         <svg fill={fillColor} height={height} width={width} xmlns="http://www.w3.org/2000/svg" className="bi bi-pc-display-horizontal" viewBox="0 0 16 16">

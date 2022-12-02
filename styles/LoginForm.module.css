@@ -6,3 +6,128 @@
              -15px -15px 13px #1d1d1e;
 }
 
+
+
+
+
+
+.card {
+    /* width: calc(100% - 1rem); */
+    min-width: 210px;
+    width: calc(100vw - 2rem);
+    margin-inline: .5rem;
+    margin-bottom: 2.5rem;
+    transition: all .3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    border-radius: 32px;
+    background: #131314;
+    box-shadow:  15px 15px 13px #09090a,
+             -15px -15px 13px #1d1d1e;
+}
+
+.card:hover {
+    background: #252528;
+    box-shadow:  15px 15px 13px #09090a,
+             -15px -15px 13px #383839;
+}
+
+body .arrowd:hover {
+    
+        cursor: 'pointer';
+        background-color: 'black';
+        padding: '20rem';
+    
+}
+
+@media screen and (min-width: 768px) {
+    .cardcontainer {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .card {
+        /* width: calc(100% - 1rem); */
+        flex: 0 0 30%;
+    }
+}
+
+
+.cardtop {
+    background: rgb(22, 38, 44);
+    border-radius: 1px;
+    margin-top: 1.7rem;
+    padding-inline: 2rem;
+    padding-block: 0.2rem;
+}
+
+.cardtop h2 {
+    color: lightblue;
+}
+
+.card img {
+    display: block;
+    border-radius: 100%;
+    margin: 2rem auto;
+}
+
+.card ul {
+    list-style-type: none;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.card li {
+    margin-bottom: 1rem;
+}
+
+.card li:last-of-type {
+    margin-bottom: 2rem;
+}
+
+.card li span {
+    /* color: black; */
+    font-weight: bold;
+}
+
+.card p {
+    margin-left: 0;
+}
+
+.cardbody {
+    padding: 1rem;
+}
+
+.card img {
+    margin: auto;
+}
+
+.group {
+    display: block;
+    padding-bottom: 1rem;
+}
+
+.group label {
+    font-size: 18px;
+    margin-right: .3rem;
+}
+
+.group input {
+    padding: .5rem;
+    font-size: 18px;
+}
+
+.submit {
+    border: 1px dashed skyblue;
+    background-color: transparent;
+    color: whitesmoke;
+    display: block;
+    padding: 1rem 2rem;
+    transition: all 0.3s ease-in-out;
+    border-radius: .4rem;
+    font-size: 20px;
+}
+
+.submit:hover {
+background-color: rgb(63, 63, 206);
+box-shadow: 4px 4px 4px rgba(179, 210, 210, 0.5);
+cursor: pointer;
+}

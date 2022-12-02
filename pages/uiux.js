@@ -50,8 +50,10 @@ export default function Uiux(devs) {
       <Header title="Next.js Dev" />
       <main className={styles.main}>
         <DevBanner title='UI/UX Designers' 
-            tagline='If you need to make something intuitive and accessible, with beautiful design and responsive layout, look no further!' 
-            imgPath={'../public/pc.svg'}/>
+            tagline='If you need to make something intuitive and accessible, with an aesthetic design, intuitive flow and layout, look no further!' 
+            imgPath={'art'}
+            svgColor={'turquoise'}
+            />
              <div className={styles.flex1200}>         
             { 
             devs.devs.map((dev, index) => {

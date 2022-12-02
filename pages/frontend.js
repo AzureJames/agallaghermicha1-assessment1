@@ -51,7 +51,9 @@ export default function Frontend(devs) {
       <main className={styles.main}>
         <DevBanner title='Front End Developers' 
             tagline='If you need a beautiful design or nice responsive layout, you will find it here!' 
-            imgPath={'../public/pc.svg'}/>
+            imgPath={'art'}
+            svgColor='lightblue'
+            />
              <div className={styles.flex1200}>         
             { 
             devs.devs.map((dev, index) => {
