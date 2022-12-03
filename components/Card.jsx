@@ -8,7 +8,8 @@ export default function Card({index, title, body, city, state, country, pic, pho
         color: 'whitesmoke',
         textAlign: 'center',
         backgroundColor: 'transparent',
-        border: 'none'
+        border: 'none',
+        fontSize: '20px'
     }
     const arrowDiv = {
         border: '1px solid gray',
@@ -19,7 +20,7 @@ export default function Card({index, title, body, city, state, country, pic, pho
         margin: '0 auto',
     }
     const [activeCard, setActiveCard] = useState("");
-    const [arrowContent, setArrowContent] = useState("v");
+    const [arrowContent, setArrowContent] = useState("⬇");
     function randomBio () {
         let rnd = Math.round(Math.random()*6);
         //let txt = "";
@@ -49,10 +50,10 @@ export default function Card({index, title, body, city, state, country, pic, pho
                 setActiveCard("");
                 break;
         }
-       setArrowContent("^");
+       setArrowContent("ꜛ");
     }
   return (
-    <div className={styles.card} key={index} onClick={ () => {if(activeCard == ""){randomBio();} else {setActiveCard("");setArrowContent("v");}} }> 
+    <div className={styles.card} key={index} onClick={ () => {if(activeCard == ""){randomBio();} else {setActiveCard("");setArrowContent("⬇");}} }> 
         <div className={styles.cardtop}>
             <h2 className={styles.h2two}>{title}</h2>
         </div>
