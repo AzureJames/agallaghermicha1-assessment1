@@ -6,7 +6,9 @@ import { useState } from 'react';
 export default function Card({index, title, body, city, state, country, pic, phone, email}) {
     const arrow = {
         color: 'whitesmoke',
-        textAlign: 'center'
+        textAlign: 'center',
+        backgroundColor: 'transparent',
+        border: 'none'
     }
     const arrowDiv = {
         border: '1px solid gray',
@@ -65,7 +67,7 @@ export default function Card({index, title, body, city, state, country, pic, pho
                     <p><span>{email}</span></p>
                     <p>{activeCard}</p>
                     <div style={arrowDiv} className='arrowd' >
-                        <p style={arrow} aria-roledescription="Click to show or hide developer description">{arrowContent}</p> 
+                        <button type='button' style={arrow} aria-roledescription="Click to show or hide developer description">{arrowContent}</button> 
                     </div>
                 </li>
             </ul>
