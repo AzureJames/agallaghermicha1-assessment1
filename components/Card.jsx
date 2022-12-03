@@ -66,10 +66,11 @@ export default function Card({index, title, body, city, state, country, pic, pho
                     <p><span>{country}</span></p>
                     <p><span>{phone}</span></p>
                     <p><span>{email}</span></p>
-                    <p>{activeCard}</p>
                     <div style={arrowDiv} className='arrowd' >
                         <button type='button' style={arrow} aria-roledescription="Click to show or hide developer description">{arrowContent}</button> 
                     </div>
+                    <p>{activeCard}</p>
+
                 </li>
             </ul>
         </div>
