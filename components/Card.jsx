@@ -3,7 +3,7 @@ import Image from 'next/image'
 import styles from '../styles/Card.module.css'
 import { useState } from 'react';
 
-export default function Card({index, title, body, city, state, country, pic, phone, email}) {
+export default function Card({index, title, body, city, state, country, pic, phone, email, uuid}) {
     const arrow = {
         color: 'whitesmoke',
         textAlign: 'center',
@@ -59,6 +59,7 @@ export default function Card({index, title, body, city, state, country, pic, pho
         </div>
         <div className={styles.servicecard}>
             <Image src={pic} alt="hello" width={128} height={128}/>
+            <a href={"profile/"+uuid}>View Full Profile</a>
             <ul>
 	            <li>
                     <p><span>{body}</span></p>
@@ -66,8 +67,8 @@ export default function Card({index, title, body, city, state, country, pic, pho
                     <p><span>{country}</span></p>
                     <p><span>{phone}</span></p>
                     <p><span>{email}</span></p>
-                    <div style={arrowDiv} className='arrowd' >
-                        <button type='button' style={arrow} aria-roledescription="Click to show or hide developer description">{arrowContent}</button> 
+                    <div className={styles.arrowd} >
+                        <button type='button' style={styles.arrow} aria-roledescription="Click to show or hide developer description">{arrowContent}</button> 
                     </div>
                     <p>{activeCard}</p>
 
