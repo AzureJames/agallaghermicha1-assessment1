@@ -70,6 +70,7 @@ export default function Uiux(devs) {
                 pic={dev.results[0].picture.large}
                 phone={dev.results[0].phone}
                 email={dev.results[0].email}
+                uuid={dev.results[0].login.uuid}
                 >
                 </Card>
                 {/* </div> */}

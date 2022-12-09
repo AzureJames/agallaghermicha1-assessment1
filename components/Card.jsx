@@ -2,6 +2,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import styles from '../styles/Card.module.css'
 import { useState } from 'react';
+// import { Uuid } from 'profile/uuid';
 
 export default function Card({index, title, body, city, state, country, pic, phone, email, uuid}) {
     const arrow = {
@@ -59,7 +60,7 @@ export default function Card({index, title, body, city, state, country, pic, pho
         </div>
         <div className={styles.servicecard}>
             <Image src={pic} alt="hello" width={128} height={128}/>
-            <a href={"profile/"+uuid}>View Full Profile</a>
+            <a href={`profile/${index}`} uuid={uuid}>View Full Profile</a>
             <ul>
 	            <li>
                     <p><span>{body}</span></p>
