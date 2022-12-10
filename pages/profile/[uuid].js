@@ -6,7 +6,7 @@ export default function Uuid( {
     id
 } ) { //{uuid}  
 
-
+  console.log(name);
     const container = {
         maxWidth: '1000px',
     margin: '0 auto'    }
@@ -66,7 +66,7 @@ export default function Uuid( {
         let res;
         res = await fetch('https://63938671ab513e12c510ef40.mockapi.io/devs') 
         let users = await res.json()
-        const user = users.find((user) => user.id-1 === params.uid);
+        const user = users.find((user) => user.id-1 == params.id);
         const bio = { ...user};
         //let user = data.find(item=> item.id-1 == params.uuid)
         return {
