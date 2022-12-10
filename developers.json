@@ -1,0 +1,75 @@
+{
+    "developers": [
+        {
+            "id": 0,
+            "name": "Alain Robin",
+            "image": "ala",
+            "title": "Developer",
+            "email": "alain.robin@example.com",
+            "description": "Lots of experience in Web, Worked alongside product managers and devs to gather requirements in design sessions, implemented frontend and backend features/bug fixes, daily standups, tracked progress with project management software.",
+            "body": "Its urgent, but we dont have time in the next two years to test it, but we must prioritize it. At least we dont need to obfuscate it. You must rethink the whole process. We will give you a slice of pizza if you finish the code until yesterday. Make it pop remember, the entirety is equal or better. We must build a queue system to ensure it gets the data from our API so this will result in a delay. How does this indicator should look?",
+            "bodytwo": "Also please answer to question from the next mail. Kind reminder. Please inform us where we are on this. After the release, we will need to test it individually. This was the last time when you are allowed to promote something urgent in the production when you was asked for."
+        },
+        {
+            "id": 1,
+            "name": "Alain Robin",
+            "image": "ala",
+            "title": "Developer",
+            "email": "alain.robin@example.com",
+            "description": "Lots of experience in Web, Worked alongside product managers and devs to gather requirements in design sessions, implemented frontend and backend features/bug fixes, daily standups, tracked progress with project management software.",
+            "body": "Its urgent, but we dont have time in the next two years to test it, but we must prioritize it. At least we dont need to obfuscate it. You must rethink the whole process. We will give you a slice of pizza if you finish the code until yesterday. Make it pop remember, the entirety is equal or better. We must build a queue system to ensure it gets the data from our API so this will result in a delay. How does this indicator should look?",
+            "bodytwo": "Also please answer to question from the next mail. Kind reminder. Please inform us where we are on this. After the release, we will need to test it individually. This was the last time when you are allowed to promote something urgent in the production when you was asked for."
+        },
+        {
+            "id": 2,
+            "name": "Umut Kumcuoglu",
+            "image": "umu",
+            "title": "Developer",
+            "email": "umut.kumcuoglu@example.com",
+            "description": "Athabasca University student with a passion for full-stack web development and mobile app development. Lets build something cool together!",
+            "body": "The production database is best for coffee in the morning. Also, if you dont have a backup it will work well. We don’t want a backup, it in no way is going down! We must start to do it in this way. Did you develop on production code using the UAT Database? This is the method that we choose. I dont believe we talked about the same thing. ",
+            "bodytwo": "We must check Jira and you must put everything there, even tasks that you didnt do. We exceed the clients expectancies, but he fired us. Put everything on git. Why this password is encrypted, how I can use it? We will not update any information received from you, so you will be the master of the data. Please create an extra line in the source code file with a comment contends."
+        },
+        {
+            "id": 3,
+            "name": "Martha Lemus",
+            "image": "mar",
+            "title": "Developer",
+            "email": "martha.lemus@example.com",
+            "description": "In my final term of Business Information Technology at RRC, graduating in December 2022, and ready to start my career as a designer, back-end developer, API developer, App developer, or full-stack software developer.",
+            "body": "Please answer to the question from the next mail. Kind reminder. Please inform us where we are on this. After the release, we will need to test it individually. This was the last time when you are allowed to promote something urgent in the production when you was asked for.",
+            "bodytwo": "Dropping the production database is the best coffee in the morning. Also, if you dont have a backup it will work well. We don’t want a backup, it in no way is going down! We must start to do it in this way. Did you develop on production code using the UAT Database? This is the method that we choose. I dont believe we talked about the same thing."
+        },
+        {
+            "id": 4,
+            "name": "Leticia Aubert",
+            "image": "let",
+            "title": "Developer",
+            "email": "leticia.aubert@example.com",
+            "description": "A team player with a strong willingness to learn and adapt to new opportunities. I am a very passionate individual towards programming and am working on my own personal projects and studies along side school to gain more experience.",
+            "body": "Check Jira and you put everything there, even tasks that you didnt do. We exceed the clients expectancies, but he fired us. Put everything on git. Why this password is encrypted, how I can use it? We will not update any information received from you, so you will be the master of the data. Please create an extra line in the source code file with a comment contends.",
+            "bodytwo": "We start the release, but currently, we have some issues regarding the release. This approach would make many exceptions in a short time, that would made the entire system exposed. I added new comments with red about the team building. Nobody its allowed to look at his boss. "
+        },
+        {
+            "id": 5,
+            "name": "Pedro Perez",
+            "image": "pe",
+            "title": "Developer",
+            "email": "pedro.perez@example.com",
+            "description": "Technology is a byproduct of constant iteration and improvement from people with a passion for problem solving. That passion is one of the many reasons I feel such an innate gravitation towards tech. From my spell in Computing Science at Simon Fraser University working with Python, C++, and assembly, moshed with the likeness of discrete mathematics, linear algebra and calculus - I found a deep connection and sense of wonder in the world of logic, math and computers.",
+            "body": "We will have another meeting to be sure that you understand what I talked about in the last meeting. And after that, we will do a Knowledge Share to be sure that everyone understands. We appreciate your great effort, but you must follow the rules. I know anyone who can do that for an affordable cost, but I have a remarkable concept for a startup, I want you to construct it for me yet can you transform to make the pizza look more delicious, or needs to be sleeker. Yes, you can store the passwords in a sticky note on your screen, because nobody knows your password. We will update the data that we receive from you. ",
+            "bodytwo": "I think there might be confusion about the guidelines. Please see my answers below. Currently, we set up the logic of the pipeline like this: eat pizza, drink coffee, bathroom, two lines of code, repeat the process. Currently, we sum these permissions. Is it not enough to put the header with the name of the field on the first row? Please dont reply, please."
+        },
+        {
+            "id": 6,
+            "name": "Svyatovid Tkachenko",
+            "image": "svy",
+            "title": "Developer",
+            "email": "svyatovid.tkachenko@example.com",
+            "description": "I enjoy creating products with the user in mind, focusing on smooth processes and experiences. My interests include guerrilla usability testing, baking, architecture, gamification, Tilda Swinton, 3D printing, open-source software, modelling and rendering in Blender, Dungeon and Dragons, music in Ableton Live, futurism, and VR.",
+            "body": "I agree with you, yet desires to be smoother can you are making it appear like this clipart I created nor are we able to have any other option, for making it look like Spotify, or I want you to take it to the next level. I dont believe that you did some unit tests. Send me the password in plain text on email. Hurry up! Lets do the Secret Santa Party in November. The client said that he just want a website to generate data, nothing more, now he told us what he means is a website like Facebook.",
+            "bodytwo": "The most important part of the workday is lunchtime. I dont see your task in Jira so that means you didnt work in this sprint. Can we attempt some other colors maybe just do what you think? "
+        }
+    ]
+}
+
