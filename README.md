@@ -3,7 +3,7 @@
 Azure Gallagher (NAIT)
 
 Are you looking for a web developer? Look no further-- this is a compilation of the best and brightest in the field!
-There are 4 pages with a different type of developer on each page.
+There are 4 pages with a different type of developer on each page. It also has a login form and link to this Github readme.
 
 Link to live site here:
 https://agallaghermicha1-assessment1.vercel.app/
